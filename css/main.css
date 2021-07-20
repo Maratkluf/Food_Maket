@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0
+}
+
+section {
+    width: 65%;
+    margin: 0 auto;  
+}
+
+header {
+    top: 0;
+
+    z-index: 10000;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    height: 156px;
+    font-weight: 600;
+    justify-content: space-between;
+    background-color: #fafaff;
+    align-items: center;
+    box-shadow: drop-shadow(-3px -3px 2px rgba(255,255,255,0.3))
+    drop-shadow(5px 5px 5px rgba(0,0,0,0.2))
+    drop-shadow(5px 5px 5px rgba(0,0,0,0.2));
+}
+
+.logo {
+    width: 246px;
+    height: 101.76px; 
+    margin-left: 10%;
+}
+
+.nav__menu {
+    width: 580px;
+    height: 48px;
+}
+.nav__toggle {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.nav__menu ul {
+    display: flex;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.nav__item {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+    
+}
+
+.nav__item:hover {
+    color: #FA4A0C;
+    
+}
+
+.active {
+    color: #FA4A0C;
+}
+
+.first-block{
+    margin-top: 156px;
+    background: url(/img/903906.jpg) no-repeat center/cover;
+    position: relative;
+    width: 100%;
+    height: 619px;
+    overflow: hidden;
+    
+}
+
+.first-block img{
+    width: 150%;
+}
+
+.back-color-opacity {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    top: 0;
+}
+
+.first-block-information {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    color: white;
+    z-index: 1000;
+}
+
+.first-block-information h2 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+}
+
+.inf p{
+    font-size: 58px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 68px;
+}
+
+.bottom-inf p {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+.buttons-app {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-app a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 236px;
+    height: 68px;
+    
+}
+
+.but {
+    margin: 0 10px;
+    transition: color 0.4s linear;
+    position: relative;
+    border: 1px solid white;
+}
+
+.googleplay {
+    background-color: #FA4A0C;
+    border-radius: 30px;
+    transition: 0.5s
+}
+
+.googleplay:hover {
+    background: none;
+    
+}
+
+.appstore {
+    border-radius: 30px;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+.appstore:hover {
+    background: #FA4A0C;
+}
+
+.main-section {
+    position: relative;
+    
+}
+.phones-block {
+    position: absolute;
+    top: 55%;
+    width: 90%;
+    text-align: center;
+    z-index: 999;
+}
+
+.second-block {
+    margin-top: 640px;
+    text-align: center;
+}
+
+.second-block hr{
+    width: 884px;
+    height: 4px;
+    color: #E4E4E4;
+    background-color: #E4E4E4;
+    border: none;
+    border-radius: 30px;
+}
+
+.second-block-inf {
+    font-size: 34px;
+    font-weight: 600;
+    line-height:36px;
+    margin-top: 2em;
+}
+
+.forcenter {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.third-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.third-block-inf {
+    width: 568px;
+    margin: 0 100px;
+}
+
+.third-block-inf h2{
+    color: #FA4A0C;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.large-text{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+}
+.mini-text {
+    color: #737373;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.offer-bg {
+    background: url(/img/745017.jpg) no-repeat center/cover;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    height: 510px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+}
+
+.offer-bg h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 57px;
+}
+
+.offer-bg p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.back-color-op {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    top: 0;
+}
+
+.offer-inf {
+    z-index: 1000;
+}
+
+footer {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    height: 156px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons a{
+    margin: 0 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.shadow1 {
+    filter: drop-shadow(-30px -30px 20px rgba(255,255,255,0.3))
+    drop-shadow(15px 15px 15px rgba(0,0,0,0.2))
+    drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+}
+
+.shadow2 {
+    filter: drop-shadow(-30px -30px 20px rgba(255,255,255,0.3))
+    drop-shadow(-15px 15px 15px rgba(0,0,0,0.2))
+    drop-shadow(-15px 15px 15px rgba(0,0,0,0.2));
+}
+
+@media screen and (max-width: 1024px) {
+    section, header, footer {
+        margin: 0;
+        width: 100%;
+    }
+    .nav__menu ul {
+        margin-right: 30px;
+    }
+    .second-block hr{
+        width: 100%;
+    }
+
+    .third-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .forreverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .logo {margin-left: 0;}
+    .first-block{ 
+        background: none;
+        position: relative;
+        width: 100%;
+        height: 619px;
+    }
+    .back-color-opacity {
+        visibility: hidden;
+    }
+    .first-block-information {
+        width: 100%;
+        top: 0;
+        text-align: center;
+        color: black;
+        z-index: 1000;
+    }
+    
+    .first-block-information h2 {
+        color: #737373;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 0.1px;
+    }
+    
+    .inf p{
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        line-height: 68px;
+    }
+    
+    .bottom-inf p {
+        color: #737373;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+    }
+
+    .forcen {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .buttons-app {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 236px;
+        justify-content: center;
+    }
+
+    .buttons-app a {
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 68px;
+        
+    }
+    
+    .but {
+        transition: color 0.4s linear;
+        margin: 10px 0;
+        padding: 0;
+        position: relative;
+        border: 1px solid #FA4A0C;
+    }
+
+    .appstore a{
+        color: #FA4A0C;
+    }
+
+    .googleplay a:hover{
+        color: #FA4A0C;
+    }
+
+    .appstore a:hover{
+        color: white;
+    }
+
+    .phones-block {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .second-block {
+        margin-top: 80px;
+    }
+    .second-block-inf {
+        font-size: 24px;
+    }
+
+    .third-block-inf {
+        width: 70%;
+        text-align: center;
+    }
+    footer {
+        width: 100%;
+        display: flex;
+        height: 156px;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .logo {
+        visibility: hidden;
+    }
+    footer .copyright {
+        width: 0px;
+        visibility: hidden;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 860px) {
+    .nav__menu{
+        z-index: 10000;
+        position: fixed;
+        overflow: auto;
+        top: 156px;
+        right: -100%;
+        width: 80%;
+        height: 100%;
+        padding: 2rem;
+        background-color: #fafaff;
+        transition: 0.5s;
+    }
+    .nav__menu ul {
+        flex-direction: column;
+    }
+}
+
+.show {
+    right: 0;
+}
+
+
+
